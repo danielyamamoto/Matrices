@@ -16,4 +16,6 @@ public:
 	Matriz4 rotateZ(const float angle); // Ángulos
 	//Matriz4 shear(const float x, const float y, const float z); // Sorprender a Pedro // No es necesaria // Not today
 	Matriz4 scale(const float &x, const float &y, const float &z);
+	Matriz4 perspective(float &angle, float &aspect, float &near, float &far); 
+	Matriz4 ortho(float &near, float &far, float &left, float &right, float &top, float &bottom);
 };
